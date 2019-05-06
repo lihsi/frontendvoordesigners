@@ -8,6 +8,6 @@ Voor Firefox
 
 In versie 2 heb ik de website uitgebreid in zijn volledigheid door een achtergrond en ‘’Aanbevolen’’ toe te voegen voor een visuele hiërarchie. Verder heb ik meer films toegevoegd de kleuren veranderd binnen de CSS en daarnaast meer javascript toegevoegd aan mijn ontwerp zodat de rest van de buttons het ook doen. Er is ook een animatie bij de notificatie toegevoegd en een teller om de gebruiker te informeren wat de status is. 
 
-[Demo 2 voor opdracht 1](https://lihsi.github.io/frontendvoordesigners/opdracht1/v2/)
+[Demo 2 voor opdracht 1] (https://lihsi.github.io/frontendvoordesigners/opdracht1/v2/)
 
 
