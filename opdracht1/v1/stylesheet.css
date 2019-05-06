@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/*-------BODY-------*/
+
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header''main''section''footer';
+}
+
+
+
+/*-------FONTS -------*/
+
+
+h1 {
+    color: #003082;
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+}
+
+p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+}
+
+section > h2,
+header p {
+    display: none;
+}
+
+
+/* -------PAGINATION-------*/
+
+
+
+body > section a {
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+body > section a.active {
+    background-color: #b52149;
+    color: #fff;
+}
+
+body > section a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+body > section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+/*Source: https://www.w3schools.com/css/css3_pagination.asp*/
+
+/*------- HEADER-------*/
+
+
+header {
+    grid-area: header;
+}
+
+
+/*-------NAVIGATIE-------*/
+
+
+
+header nav {
+    background-color: #000;
+    border-bottom: solid 0.312rem #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header nav ul {
+    max-width: 73rem;
+    margin: auto;
+    height: 3.5rem;
+    display: grid;
+    padding: 0 1.25rem;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+header nav ul li {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+nav li:first-of-type img {
+    width: 3.5rem;
+}
+
+nav li:nth-of-type(2) img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+
+
+/*-------NONTIFICATIE-------*/
+
+
+header nav li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.5rem;
+    margin-left: 1.5rem;
+    background-color: #357335;
+    border-radius: 10rem;
+    font-size: 0.8rem;
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}
+
+/*Source:https://www.w3schools.com/howto/howto_css_notification_button.asp*/
+/*Nontificatie voor films bij mijn lijst*/
+
+
+/*-------VERHALEN-------*/
+
+
+main {
+    margin: 1rem;
+}
+
+main section ul {
+    list-style-type: none;
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap: 1.3rem;
+    justify-content: center;
+}
+
+main section li {
+    background-color: #303030;
+    color: #000000;
+}
+
+
+main div {
+    padding: 1rem;
+}
+
+main img {
+    width: 100%;
+}
+
+main section div h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main p {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+main div p img {
+    width: 1rem;
+}
+
+main li button {
+    background-color: #303030;
+}
+
+main li button img {
+    width: 1.5rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+/*-------FOOTER-------*/
+
+
+
+footer {
+    background-color: #000;
+    min-height: 3rem;
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+footer p {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+
+/*Flex plaatst footer p aan rechterkant*/
+
+
+
+/*-------ANIMATION-------*/
+
+
+
+.element-animation {
+    animation: animationFrames linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    15% {
+        transform: translate(-25px, 0px) rotate(-5deg);
+    }
+
+    30% {
+        transform: translate(20px, 0px) rotate(3deg);
+    }
+
+    45% {
+        transform: translate(-15px, 0px) rotate(-3deg);
+    }
+
+    60% {
+        transform: translate(10px, 0px) rotate(2deg);
+    }
+
+    75% {
+        transform: translate(-5px, 0px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+
+/*-------BUTTON-------*/
+
+
+
+button {
+    height: 2.5rem;
+    border: none;
+    margin: 0 0.5rem 0.5rem auto;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+
+
+/*-------JAVASCRIPT-------*/
+
+.hidden {
+    display: none;
+}
+
+
+/*Source:http://www.theappguruz.com/tag-tools/web/CSSAnimations/*/
+
+.wobble {
+    animation: animationFrames linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 0%;
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*Source:http://cssanimate.com/*/
+/*Source:https://codepen.io/rouws/pen/KGNxpq*/
+
+
+/*-------RESPONSIVE-------*/
+
+
+@media screen and (min-width: 40em) {
+    nav ul li p {
+        display: inline;
+        font-size: 1rem;
+    }
+
+    main section ul {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 371px));
+    }
+}
+
+
+@media screen and (min-width: 72.125em) {
+    nav ul li p {
+        display: inline;
+        font-size: 1rem;
+    }
+
+    main section ul {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 355px));
+        margin-top: 5rem;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header''main''section''footer'
+    }
+
+}
+
+
+/*-------GRIDS-------*/
+
+
+/*Source:https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+/*Source:https://www.youtube.com/watch?v=T-slCsOrLcc&list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG*/

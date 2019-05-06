@@ -1,17 +1,169 @@
-<html>
-  <head></head>
-  <body>
-    <h1>Opdracht 1 - versie 1</h1>
-    <p>
-      Hier komt de HTML van de interactieve demo te staan voor de eerste opdracht:
-      Ontwerp een user interface voor een gegeven use case.
-      Werk je ontwerp uit in HTML, CSS en Javascript om te kunnen testen in een browser.
-    </p>
-    <ol>
-      <li>Als ik een lijst films heb gevonden, wil ik leuke films kunnen opslaan om ze thuis te ...</li>
-      <li>In een lijst gevonden studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is.</li>
-      <li>In een verzameling muzieknummers wil ik de volgorde kunnen veranderen om een vette playlist te maken.</li>
-      <li>Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.</li>
-    </ol>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Overzicht</title>
+</head>
+
+<!--NAVIGATIE-->
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/filmlogo.png" alt="film logo"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/zoekicon.png" alt="zoeken"></a>
+                    <a href="#">
+                        <p>Zoeken</p>
+                    </a>
+                    <a href="#"><img src="img/mijnlijst.png" alt="mijn lijst"><span class="hidden"></span></a>
+                    <a href="#">
+                        <p>Mijn lijst</p>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+<!--
+        <section>
+            <h2>Genre</h2>
+            <ul>
+                <li>
+                    <a href=#>Avontuur</a>
+                    <a href=#>Actie</a>
+                    <a href=#>Romantiek</a>
+                    <a href=#>Drama</a>
+                </li>
+            </ul>
+        </section>
+-->
+    </header>
+    <!--Source:https://www.materialui.co/materialIcons/navigation/close_black_256x256.png-->
+
+
+
+    <!--FILMS-->
+    <main>
+        <section>
+            <ul>
+<!--
+                <li>
+                    <h2>Aanbevolen</h2>
+                    <a href="#"> <img src="img/aanbevolen.jpg" alt="aanbevolen thor film"></a>
+                </li>
+                <li>
+                    <p>Avontuur (33)</p>
+                </li>
+-->
+                <li>
+                    <a href="#"> <img src="img/captainamerica.jpg" alt="captian america film"></a>
+                    <div>
+                        <h2><a href="#">Captain America</a></h2>
+                        <p>4 sterren </p>
+                        <p>2u 04m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                    <button class="hidden">
+                        <img src="img/check.png" alt="check icoon">
+                    </button>
+                </li>
+                <li>
+                    <a href="#"> <img src="img/manofsteel.png" alt="man of steel film"> </a>
+                    <div>
+                        <h2><a href="#">Man of steel</a></h2>
+                        <p>4 sterren </p>
+                        <p>2u 03m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                </li>
+                <li>
+                    <a href="verhaal.html">
+                        <img src="img/bttft.jpg" alt="back to the future film"> </a>
+                    <div>
+                        <h2><a href="#">Back to the future</a></h2>
+                        <p>4 sterren </p>
+                        <p>1u 56m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                </li>
+                <li>
+                    <a href="#"> <img src="img/sherlock.jpg" alt="sherlock holmes film"> </a>
+                    <div>
+                        <h2><a href="#">Sherlock Holmes</a></h2>
+                        <p>4 sterren </p>
+                        <p>2u 09m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                </li>
+                <li>
+                    <a href="#"> <img src="img/thehobbit.jpg" alt="the hobbit film"> </a>
+                    <div>
+                        <h2><a href="#">The Hobbit</a></h2>
+                        <p>4 sterren </p>
+                        <p>3u 02m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/greenlantern.jpg" alt="green latern film"> </a>
+                    <div>
+                        <h2><a href="#">Green latern</a></h2>
+                        <p>4 sterren </p>
+                        <p>2u 03m</p>
+                    </div>
+                    <button>
+                        <img src="img/toevoegen.png" alt="toevoeg icoon">
+                    </button>
+                </li>                 
+            </ul>
+        </section>
+    </main>
+    <!--Source:https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/2000px-Gold_Star.svg.png-->
+
+
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
+
+    <!--PAGINATION-->
+    <section>
+        <h2>Pagination</h2>
+        <div>
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </section>
+    <!--Source:https://www.w3schools.com/css/css3_pagination.asp-->
+    <!--Source:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSTdwb8zUvdd8pz4_umiqOrqMRwrA4OlpUT87o0C4NSkxWQUm-->
+
+    <!--FOOTER-->
+
+    <footer>
+        <p>&copy; 2019 Films</p>
+    </footer>
+
+</body>
+
 </html>
