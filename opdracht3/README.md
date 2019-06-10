@@ -27,5 +27,7 @@ De ideal state is de homepagina met alle films aanwezig. Dit is de pagina die de
 3. Error state
 Binnen de informatie popup bevindt zich een button om de trailer te bekijken. De links hiervan doen het niet dus leidt dit tot een error state zodat de gebruiker weet dat er geen trailer beschikbaar is. 
 
-Dit is een demo van v1 waarbij de data wordt ingeladen:
-Dit is een demo van v2 waarbij de website volledig is:
+Dit is een demo van v1 waarbij alleen de data wordt ingeladen: https://lihsi.github.io/frontendvoordesigners/opdracht3/v1/
+Dit is een demo van v2 waarbij de website volledig is: https://lihsi.github.io/frontendvoordesigners/opdracht3/v2/
+
+De website is bedoelt voor desktop in de firefox browser omdat deze grids ondersteund. 
